@@ -14,7 +14,7 @@ const Experience = () => {
       </div>
       <div className="experience-container">
         <div className="experience-list">
-          <img src={img_experience}></img>
+          <img src={img_experience} className="experience-img"></img>
         </div>
         <div className="experience-list">
           <div className="experience-item">
@@ -23,7 +23,8 @@ const Experience = () => {
               Provide our customers with optimized user-friendly experience to
               increase the efficiency of digital products.
             </p>
-            <span>See Works</span> <img src={arrowRight}></img>
+            <span>See Works</span>
+            <img src={arrowRight}></img>
           </div>
           <div className="experience-item">
             <h3>Branding</h3>
@@ -31,6 +32,7 @@ const Experience = () => {
               Understanding the business and their target customers, I’m the
               bridges to bring the brand closer to their clients.
             </p>
+
             <span>See Works</span>
             <img src={arrowRight}></img>
           </div>
@@ -45,6 +47,7 @@ const Experience = () => {
             <img src={arrowRight}></img>
           </div>
         </div>
+
         <div className="experience-list">
           <div className="experience-item">
             <h3>Mobile design</h3>

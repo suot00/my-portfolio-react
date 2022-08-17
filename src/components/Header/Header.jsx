@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 const navLinks = [
   { display: "Services", url: "#services" },
@@ -6,9 +6,26 @@ const navLinks = [
   { display: "Blog", url: "#blog" },
 ];
 const Header = () => {
+  const [position, setPosition] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      let moving = window.pageYOffset;
+
+      setVisible(position > moving);
+      setPosition(moving);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
+  const cls = visible ? "visible" : "hidden";
+
   return (
-    <header className="header">
-      <div className="container">
+    <header className={cls}>
+      <div className="header-container">
         <div className="logo">
           <h3>S</h3>
         </div>
@@ -20,11 +37,11 @@ const Header = () => {
               </li>
             ))}
             <button className="btn">Hire Me</button>
-            {/* <span className="mobile_menu">
-              <i className="ri-menu-5-line"></i>
-            </span> */}
           </ul>
         </div>
+        <span className="mobile_menu">
+          <i class="ri-menu-line"></i>
+        </span>
       </div>
     </header>
   );
