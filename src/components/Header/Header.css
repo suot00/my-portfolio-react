@@ -7,17 +7,19 @@
 }
 .logo {
   background-color: #eeebff;
-  width: 50px;
-  height: 50px;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
   display: block;
 }
 .logo h3 {
   display: flex;
-  margin-top: 5px;
   color: #7b61ff;
   transform: rotate(30deg);
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
 }
 .nav_list {
   display: flex;
@@ -50,18 +52,14 @@
 .mobile_menu {
   display: none;
 }
-@media only screen and (max-width: 992px) {
+
+@media screen and (max-width: 480px) {
   .nav_menu {
     display: none;
   }
   .mobile_menu {
     display: block;
     color: #7865ff;
-  }
-  .container {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+    font-size: 2em;
   }
 }

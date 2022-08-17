@@ -59,11 +59,11 @@
   background-color: #e5e7eb;
   border: 1px solid #e5e7eb;
 }
-.title-name span {
+.title span {
   font-size: 0.5em;
 }
 .hero_img img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 .hero-btn {
@@ -71,4 +71,14 @@
 }
 .line-gray {
   margin-bottom: 1em;
+}
+@media screen and (max-width: 480px) {
+  .hero-content {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .hero_img {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

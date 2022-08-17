@@ -20,9 +20,9 @@ const Contact = () => {
           <img src={img13} className="img-13" alt="" />
         </div>
       </div>
-      {/* <div className="contact-item">
-        <img src={img15} alt="" />
-      </div> */}
+      <div className="contact-item-3">
+        <img src={img15} className="img-15" alt="" />
+      </div>
     </section>
   );
 };

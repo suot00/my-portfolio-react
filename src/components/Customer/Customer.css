@@ -1,6 +1,6 @@
 .customer {
   background-color: #fef2f2;
-  margin: 5em 10em 0 10em;
+  padding: 2em;
 }
 .customer-container {
   display: flex;
@@ -10,8 +10,8 @@
   justify-content: center;
 }
 .customer-name p {
-  margin-left: 3em;
-  margin-bottom: 1em;
+  margin-left: 11em;
+  /* margin-bottom: 1em; */
   color: #9ca3af;
 }
 .customer-list {

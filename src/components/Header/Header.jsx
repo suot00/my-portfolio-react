@@ -27,7 +27,7 @@ const Header = () => {
     <header className={cls}>
       <div className="header-container">
         <div className="logo">
-          <h3>S</h3>
+          <h3 className="logo_s">S</h3>
         </div>
         <div className="nav_menu">
           <ul className="nav_list">
